@@ -1,0 +1,305 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+    /* cores */
+    --cor--do--fundo: #01000E;
+    --cor--texto: #01000E;
+    --cor--laranja:#FF3D21;
+    --cor--cinza:#E1E3E9;
+}
+
+body {
+    background-color: var(--cor--do--fundo);
+}
+
+.Main {
+    height: 100%;
+}
+
+/* nav bar */
+
+.Nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10%;
+}
+
+.logo h1 {
+    color: var(--cor--cinza);
+    font-family: 'Oxygen', sans-serif;
+    font-size: 25px;
+}
+
+.Redes img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* sessão 01 */
+
+.white-space-1 {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 10%;
+}
+
+
+.container-s1 {
+    width: 100%;
+    display: flex;
+}
+
+/* card 1 */
+
+.card-1 {
+    width: 60%;
+    height: 400px;
+    margin: 0 10px 0 0;
+    background-color: var(--cor--cinza);
+
+    border-radius: 10px;
+}
+
+.Card-1-content {
+    padding: 30px;
+    height: 100%;
+}
+
+.Card-1-content h2 {
+    font-size: 40px;
+    margin: 0 0 30px 0;
+}
+
+.Card-1-content p {
+    font-size: 30px;
+    margin: 0 0 150px 0;
+}
+
+.Card-1-content button {
+    background-color: var(--cor--do--fundo);
+    padding: 5px 45px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+    color: var(--cor--cinza);
+}
+
+/* card 2 */
+
+.card-2 {
+    width: 40%;
+    height: 400px;
+    border-radius: 10px;
+
+    border: 1px solid var(--cor--cinza);
+}
+
+.card-2-content {
+    color: var(--cor--cinza);
+    padding: 30px;
+}
+
+.card-2-content p {
+    font-size: 40px;
+    display: block;
+    margin: 30px;
+    padding: 0 0 14px 0;
+
+    border-bottom: 3px solid var(--cor--cinza);
+}
+
+.card-2-content a {
+    font-size: 20px;
+}
+
+/* sessão 2 */
+
+.white-space-2 {
+    display: flex;
+    justify-content: center;
+
+    margin: 0 10%;
+}
+
+.container-s2 {
+    width: 100%;
+    display: flex;
+}
+
+/* card 3 */
+
+.card-3 {
+    width: 50%;
+    height: 400px;
+    background-color: var(--cor--cinza);
+
+    border-radius: 10px;
+
+    margin: 10px 10px 0 0;
+}
+
+.container-card3-content {
+    padding: 30px;
+    margin: 0 0 15% 0;
+}
+
+.container-card3-content h2 {
+    font-size: 30px;
+}
+
+.container-card3-content p {
+    font-size: 20px;
+}
+
+.container-card3-line {
+    border-top: 2px solid var(--cor--laranja);
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.arrow-img-1 {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.foto-perfil-1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circulo-laranja {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FF3D21;
+
+    position: absolute;
+    right: -9px;
+}
+
+.container-card3-inline-element {
+    display: inline-flex;
+    width: 50%;
+    min-width: 50%;
+}
+
+.container-card3-inline-element h3 {
+    font-size: 20px;
+    text-align: end;
+    margin: 0 10px 0 0;
+}
+
+/* container card */
+
+.container-card {
+    display: flex;
+    width: 50%;
+}
+
+
+/* card 4 */
+
+.card-4 {
+    width: 50%;
+    height: 400px;
+    background-color: var(--cor--laranja);
+    border-radius: 10px;
+    margin: 10px 10px 0 0;
+}
+
+/* card 5 */
+
+.card-5 {
+    width: 50%;
+    height: 400px;
+    background-color: var(--cor--cinza);
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.Container-card5 {
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--cor--texto);
+}
+
+.arrow-4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+    .white-space-1 {
+        margin: 0 1%;
+    }
+
+    .white-space-2 {
+        margin: 0 1%;
+    }
+}
+
+
+@media (max-width:1024px) {
+    .container-s1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-s2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card-2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .card-3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width:768px) {
+
+}
