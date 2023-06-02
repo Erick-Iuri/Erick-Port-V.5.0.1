@@ -253,9 +253,6 @@ body {
 
 
 
-
-
-
 @media (max-width: 1400px) {
     .white-space-1 {
         margin: 0 1%;
@@ -300,6 +297,35 @@ body {
 }
 
 
-@media (max-width:768px) {
+@media (max-width:574px) {
+    .card-1 {
+        height: 500px;
+    }
+
+    .card-2 {
+        height: 500px;
+    }
+
+    .card-3 {
+        height: 500px;
+    }
+
+    .container-card3-inline-element h3{
+        font-size: 12px;
+        text-align: start;
+    }
+
+    .container-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-4 {
+        width: 100%;
+    }
+
+    .card-5 {
+        width: 100%;
+    }
 
 }
